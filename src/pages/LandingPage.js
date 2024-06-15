@@ -1,7 +1,76 @@
 import React from 'react'
 import './LandingPage.css'
 import ProjectCards from '../Components/ProjectCards'
+import { useState } from 'react';
+import { SettingOutlined, UpOutlined, DownOutlined } from '@ant-design/icons';
+import { Collapse, Select } from 'antd';
+const { Panel } = Collapse;
+const text = `
+It is alomost completely automated as a system . You can schedule plan and create
+calenders for your upcoming males. You can Anylzer Ai, tracker , Ai reporter, Ai to create
+a smooth business plan for your and your teamateswith one click!
+`;
 function LandingPage() {
+    const [activeKey, setActiveKey] = useState(['5']);
+
+    const onChange = (key) => {
+        console.log(key);
+        setActiveKey([]);
+        setActiveKey(key);
+    };
+
+    const genExtra = () => (
+        <SettingOutlined
+            onClick={(event) => {
+                // If you don't want click extra trigger collapse, you can prevent this:
+                // event.stopPropagation();
+            }}
+        />
+    );
+    const items = [
+        {
+            key: '1',
+            label: 'What is the purpose of this App?',
+            children: <div style={{ width: "50%", color: "#786F77" }}>{text}</div>,
+            // extra: genExtra(),
+        },
+        {
+            key: '2',
+            label: 'How this app can help me get a Job?',
+            children: <div style={{ width: "50%", color: "#786F77" }}>{text}</div>,
+
+        },
+        {
+            key: '3',
+            label: 'Can I find Investors In this App?',
+            children: <div style={{ width: "50%", color: "#786F77" }}>{text}</div>,
+
+        },
+        {
+            key: '4',
+            label: 'Can I find Investors In this App?',
+            children: <div style={{ width: "50%", color: "#786F77" }}>{text}</div>,
+
+        },
+        {
+            key: '5',
+            label: 'Is this App free to use? ', children: <div style={{ width: "50%", color: "#786F77" }}>{text}</div>,
+        },
+        {
+            key: '6',
+            label: 'What kind of Videos I can Post?',
+            children: <div style={{ width: "50%", color: "#786F77" }}>{text}</div>,
+
+        },
+        {
+            key: '7',
+            label: 'Can I share my videos on other platforms?',
+            children: <div style={{ width: "50%", color: "#786F77" }}>{text}</div>,
+
+        },
+    ];
+    const expandIcon = ({ isActive }) => isActive ? <UpOutlined /> : <DownOutlined />;
+
     return (
         <>
             <div className='homepage'>
@@ -290,7 +359,203 @@ function LandingPage() {
             </div>
 
             <ProjectCards />
-           
+
+            <div className='section4-heading' >
+                <div className='mysection'>
+                    <h2>More than a Social App</h2>
+                    <p>Beyond Profiles: Building the Future of Startups</p>
+                </div>
+
+            </div>
+            <div className="section5">
+                <div className='section5-con'>
+                    <div className="con-1">
+                        <div className='conRactangular'>
+
+                        </div>
+                        <div className='con-section'>
+                            <h2>Entrepreneur and Investor Bridge</h2>
+                            <p>Empower entrepreneurs and investors to connect, share insights, and showcase ventures through video creation on your app.
+                                {/* <br></br> */}
+                                Drive collaborative learning and expertise-sharing by enabling users to easily create podcasts within your app.</p>
+                            <div className='section5-ico'>
+                                <h2>Available on</h2>
+                                <img src="/icbaselineapple.svg" alt="" srcset="" />
+                                <img src="/mageplaystore.svg" alt="" srcset="" />
+                            </div>
+                        </div>
+
+                    </div>
+                    <div className="con-2">
+                        <img src="/Group 1321314675.png" alt="" />
+
+                    </div>
+                </div>
+            </div>
+            <div className='section4-heading' >
+                <div className='mysection'>
+                    <h2>Innovations Beyond Social Media</h2>
+                    <p>Beyond Profiles: Building the Future of Startups</p>
+                </div>
+            </div>
+            <div className="section5">
+                <div className='section6-con'>
+                    <div className="con-1">
+                        <h2>Entrepreneur-Investor Collaboration Through Location Integration </h2>
+                        <div className='section6-btn'>
+                            Explore More
+                        </div>
+                        <p>
+                            Integration location features into your app enriches user experience and fosters seamless connections, empowering entrepreneurs and investors alike. With this integration, users can easily locate each other on Google Maps, facilitating direct connections and fostering collaboration.
+                        </p>
+                        <div className='section6-button' >
+                            Downloaad
+                        </div>
+                    </div>
+                    <div className="con-2">
+                        <img src="/MacBook Pro Tilted Screen Mockup.png" alt="" />
+
+                    </div>
+                </div>
+            </div>
+            <div className="section5">
+                <div className='section7-con'>
+                    <div className="con-1">
+                        <h2>What we are offering is Outside the world.</h2>
+
+                        <p>
+                            Discover the transformative power of our app, where we're committed to turning your darkest future into a shining beacon of opportunity. When we say it, we mean it. Download our app now and unlock connections with potential entrepreneurs and investors eagerly awaiting your ideas.
+                        </p>
+                        <div className="blue-box">
+                            Entrepreneurs & Investors Videos
+                        </div>
+                        <div className="list-c6">
+                            Business Podcasts
+                        </div>
+                        <hr></hr>
+                        <div className="list-c6">
+                            Hosting Events
+                        </div>
+                        <hr></hr>
+                        <div className="list-c6">
+                            Dream Jobs
+                        </div>
+                    </div>
+                    <div className="con-2">
+                        <img src="/Group 1321314670.png" alt="" />
+
+                    </div>
+                </div>
+            </div>
+            <div className='section4-heading' >
+                <div className='mysection'>
+                    <h2>What we are offering is Outside the world.</h2>
+                    <p>Discover the transformative power of our app, where we're committed to turning your darkest future into a shining beacon of opportunity. When we say it, we mean it. Download our app now and unlock connections with potential entrepreneurs and investors eagerly awaiting your ideas.</p>
+                </div>
+            </div>
+            <div className='section4-heading' >
+                <div className='mysection'>
+                    <h2>Frequently asked questions</h2>
+                    <p>We`re happy to answer your questions</p>
+                </div>
+            </div>
+            <div className="section5">
+                <div className='section7-con'>
+                    <div className="section8-con">
+                        <Collapse
+                            activeKey={activeKey}
+                            onChange={onChange}
+                            expandIcon={expandIcon}
+                            expandIconPosition="end"
+                        >
+                            {items.map(item => (
+                                <Panel header={item.label} key={item.key} extra={item.extra}>
+                                    {item.children}
+                                </Panel>
+                            ))}
+                        </Collapse>
+
+                    </div>
+
+                </div>
+            </div>
+            <div className='section10'>
+                <div className='section10-con'>
+                    <button className="section10-con-btn">DOWNLOAD</button>
+                    <div className="section10-con-headding">
+                        Download the <span>Investor App</span> Now
+                    </div>
+                    <p>Download our app and join the community of millions of Entrepreneurs and <br></br> Investors out there.</p>
+
+                    <div className="download-parent">
+                        <img className="download-icon" alt="" src="/download.svg" />
+                        <b className="investor-app">Download Now</b>
+                    </div>
+                </div>
+            </div>
+            <div className='footer'>
+                <div className='footer-con'>
+                    <div className="footer-items">
+                        <div className='footer-item'>
+                            <h2 className="Investor-footer">Investor App</h2>
+                            <p className="para">Revolutionizing Investor-Entrepreneur Social Media</p>
+                            <div>
+                                <button className="footerbtn">Download</button>
+                            </div>
+                        </div>
+                        <div className='footer-item'>
+                            <h2 className="footer-content">
+                                Company
+                            </h2>
+                            <div className='fo-links'>About</div>
+                            <div className='fo-links'>Home</div>
+                            <div className='fo-links'>Contact</div>
+
+                        </div>
+                        <div className='footer-item'>
+                            <h2 className="footer-content">
+                                Support Us
+                            </h2>
+                            <div className='fo-links'>Help Center</div>
+                            <div className='fo-links'>FAQ's</div>
+
+                        </div>
+                        <div className='footer-item'>
+                            <h2 className="footer-content">
+                                Resources
+                            </h2>
+
+                            <div className='fo-links'>Privacy Policy</div>
+                            <div className='fo-links'>Contact</div>
+                            <div className='fo-links'>Term of services</div>
+                        </div>
+                        <div className='footer-item'>
+                            <h2 className="footer-content">
+                                Address
+                            </h2>
+
+                            <div className='fo-links-con'>101 Marlow Street. #12-05 Clife
+                                Parkview. NYC 059020.
+                                <span> View on Maps</span></div>
+                            <div className='fo-links'>Inquiries</div>
+                            <div className='fo-links-numbr'>+12 1214 1211<br></br>
+                                hello@azitadarvishi.com</div>
+                            <div className='fo-links'>
+                                <img src="/social-icon.svg" alt="" />
+                            </div>
+
+                        </div>
+
+
+                    </div>
+                </div>
+
+            </div>
+            <div className="copyRight">
+                <div className="copayRight-con">
+                    © 2024 Investor. All rights reserved     |     Cookie Settings, Anti-Spam, Privacy, User agreement, Legal Notice and Responsible Disclosure
+                </div>
+            </div>
 
 
         </>

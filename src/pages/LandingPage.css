@@ -839,7 +839,7 @@
     align-items: center;
     justify-content: center;
     padding: 20px 30px;
-    gap: 15px;
+    /* gap: 15px; */
     cursor: pointer;
 }
 
@@ -1343,29 +1343,531 @@ body {
     margin-top: 50px;
 }
 
-.sectio3bx1{
-width: 20%;
-display: flex;
+.sectio3bx1 {
+    width: 20%;
+    display: flex;
     justify-content: space-between;
     /* align-items: center; */
 }
-.section3line{
-color: #6165F3;
-font-weight: 800;
-margin-right: 10px;
+
+.section3line {
+    color: #6165F3;
+    font-weight: 800;
+    margin-right: 10px;
 
 }
-.sectio3bx1 .count{
+
+.sectio3bx1 .count {
     color: white;
-    
-/* #ADBDCC */
+
+    /* #ADBDCC */
 }
-.conten-para{
-color:#ADBDCC;
-/* #ADBDCC */
+
+.conten-para {
+    color: #ADBDCC;
+    /* #ADBDCC */
     font-size: 13.77px;
     font-weight: 400;
     line-height: 24px;
     letter-spacing: 0.20000000298023224px;
     text-align: left;
+}
+
+.section4-heading {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+
+}
+
+.mysection {
+    /* width: 20%; */
+    /* display: block; */
+    width: 50%;
+    justify-content: center;
+    text-align: center;
+}
+
+.mysection h2 {
+    font-family: sans-serif;
+    font-size: 40.31px;
+    font-weight: 700;
+    line-height: 50.97px;
+    letter-spacing: -0.02em;
+    text-align: center;
+    color: #000000;
+
+}
+
+.mysection p {
+    font-family: sans-serif;
+    font-size: 17.41px;
+    font-weight: 400;
+    /* line-height: 28.49px; */
+    /* text-align: left; */
+    color: #000000;
+
+}
+
+.section5 {
+    width: 100%;
+    min-height: 500px;
+    max-height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section5-con {
+    width: 80%;
+    height: 450px;
+    /* border: 1px solid red; */
+    background: linear-gradient(74.28deg, #EAF3FF 0.53%, #FFFFFF 96.94%);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.conRactangular {
+    width: 360.13px;
+    height: 300px;
+    /* top: 456.54px; */
+    position: relative;
+    float: left;
+    margin-top: 100px;
+    gap: 0px;
+    opacity: 0px;
+    margin-left: -180px;
+    border-radius: 40px;
+    transform: rotate(-50deg);
+    background: linear-gradient(274.11deg, rgba(59, 130, 246, 0.1) -7.65%, rgba(59, 130, 246, 0) 91.29%);
+}
+
+.con-1 {
+    width: 48%;
+    /* background-color: pink; */
+}
+
+.con-section {
+    position: absolute;
+    width: 38%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.con-section h2 {
+    font-family: sans-serif;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 35px;
+    letter-spacing: 0.02em;
+    text-align: left;
+    width: 80%;
+
+
+}
+
+.con-section p {
+    font-family: sans-serif;
+    font-size: 17.41px;
+    font-weight: 400;
+    line-height: 28.49px;
+    /* text-align: justified; */
+    width: 80%;
+}
+
+.section5-ico {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.con-2 {
+    width: 48%;
+
+}
+
+.con-2 img {
+    width: 100%;
+    height: 100%;
+    scale: 0.8;
+}
+
+.section6-con {
+    width: 80%;
+    border-radius: 10px;
+    background: url('../../public/frame@3x.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 40px;
+}
+
+.section6-con h2 {
+    font-family: sans-serif;
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 44px;
+    text-align: left;
+    color: white;
+
+}
+
+.section6-btn {
+    width: 120px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* top: 130px;
+        left: 21px; */
+    padding: 5px;
+    /* gap: 10px; */
+    border-radius: 50px;
+    /* border: 3px 0px 0px 0px; */
+    opacity: 0px;
+    color: white;
+    border: 3px solid #FFFFFF
+}
+
+.section6-con p {
+    font-family: sans-serif;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 40px;
+    color: white;
+    /* text-align: justified; */
+}
+
+.section6-button {
+    width: 100px;
+    height: 20px;
+    padding: 10px 20px 10px 20px;
+    gap: 10px;
+    border: 3px;
+    opacity: 0px;
+    border: 3px solid #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    margin-bottom: 50px;
+}
+
+.section7-con {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 40px;
+    background-color: white;
+}
+
+.section7-con h2 {
+    font-family: sans-serif;
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 34px;
+    text-align: left;
+    color: #193766;
+}
+
+.section7-con p {
+    font-family: sans-serif;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: left;
+    color: #697B98;
+    /* margin-top: -40px; */
+}
+
+.blue-box {
+    width: 95%;
+    height: 30px;
+    padding: 25px 35px 25px 35px;
+    gap: 10px;
+    border-radius: 10px;
+    opacity: 0px;
+    background: #6165F3;
+    color: white;
+    box-shadow: 0px 30px 60px 0px #3B82F640;
+}
+
+.list-c6 {
+    width: 95%;
+    height: 40px;
+
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 60px;
+    text-align: left;
+
+}
+
+hr {
+    background-color: rgb(240, 239, 239);
+    width: 100%;
+}
+
+.section7-con img {
+    scale: 1;
+}
+
+.section8-con {
+    width: 100%;
+    min-height: 500px;
+}
+
+/* Basic styling for the Collapse component */
+.ant-collapse {
+    border: none;
+    border-radius: 0px;
+}
+
+/* Styling for individual Collapse items */
+.ant-collapse-item {
+    background-color: white;
+}
+
+/* Styling for the expand icon container */
+.ant-collapse>.ant-collapse-item>.ant-collapse-header .ant-collapse-expand-icon {
+    background-color: #f7f7f7;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: small;
+    font-weight: 800;
+    transition: background-color 0.3s, color 0.3s;
+    /* Smooth transition */
+}
+
+/* Additional styling when the expand icon is at the end position */
+.ant-collapse.ant-collapse-icon-position-end>.ant-collapse-item>.ant-collapse-header .ant-collapse-expand-icon {
+    padding-inline-start: 0px;
+}
+
+/* Hover effect for the expand icon */
+.ant-collapse>.ant-collapse-item>.ant-collapse-header .ant-collapse-expand-icon:hover {
+    background-color: blue;
+    color: white;
+}
+
+/* Ensure that the icon inside the expand icon container also inherits the hover color */
+.ant-collapse>.ant-collapse-item>.ant-collapse-header .ant-collapse-expand-icon:hover .anticon {
+    color: inherit;
+    /* Inherits white color */
+}
+
+.section10 {
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section10-con {
+    background-color: #0C0D38;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 80%;
+    height: 90%;
+}
+
+.section10-con-btn {
+
+    padding: 10px 20px 10px 20px;
+    gap: 10px;
+    border-radius: 100px;
+    opacity: 0px;
+    background-color: #3B82F61A;
+    border: none;
+    color: #3B82F6;
+}
+
+.section10-con-headding {
+    font-family: sans-serif;
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 44px;
+    color: white;
+    text-align: center;
+    margin: 10px 0px;
+}
+
+.section10-con-headding span {
+    font-family: sans-serif;
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 44px;
+    color: #6165F3;
+    text-align: center;
+    border-bottom: 2px solid #6165F3;
+
+}
+
+.section10-con p {
+    color: #AEC6EE;
+    font-family: sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 30px;
+    text-align: center;
+    color: #AEC6EE;
+    text-align: center;
+}
+
+.section10 .download-parent {
+    background: #6165F3;
+    box-shadow: 0px 15px 40px 0px #3B82F640;
+    width: 160px;
+    height: 25px;
+    padding: 10px 15px 10px 15px;
+    /* gap: 15px; */
+    border-radius: 6px;
+    opacity: 0px;
+    color: white;
+}
+
+.footer {
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+    margin-top: 40px;
+}
+
+.footer-con {
+    width: 100%;
+    height: 100%;
+
+    transform: rotate(-2deg);
+    margin-top: 75px;
+    scale: 1.1;
+    background: #0C0D38;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-items {
+    width: 80%;
+    height: 80%;
+    transform: rotate(2deg);
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+}
+
+
+.footer-item {
+    width: 24%;
+    color: white;
+
+
+}
+
+.Investor-footer {
+    font-family: sans-serif;
+    font-size: 30.87px;
+    font-weight: 700;
+    line-height: 42.81px;
+    text-align: left;
+}
+
+.footer-items .para {
+    font-family: sans-serif;
+    font-size: 14.67px;
+    font-weight: 400;
+    line-height: 24.46px;
+    letter-spacing: 0.025em;
+    text-align: left;
+    color: #E4E4E4;
+}
+
+.footerbtn {
+    width: 166.05px;
+    height: 38.36px;
+    /* top: 10618.42px; */
+    /* left: 141.08px; */
+    gap: 0px;
+    border-radius: 25.27px;
+    opacity: 0px;
+    background: #FFFFFF;
+    border: none;
+}
+
+.footer-content {
+    font-family: sans-serif;
+    font-size: 19.87px;
+    font-weight: 700;
+    line-height: 63.81px;
+    text-align: left;
+}
+
+.fo-links {
+    font-family: sans-serif;
+    font-size: 12.67px;
+    font-weight: 300;
+    line-height: 44.91px;
+    text-align: left;
+}
+
+.fo-links-con {
+    font-family: sans-serif;
+    font-size: 11.67px;
+    font-weight: 400;
+    line-height: 20.38px;
+    letter-spacing: 0.025em;
+    text-align: left;
+}
+
+.fo-links-con span {
+    font-size: 14.67px;
+    font-weight: 400;
+    line-height: 20.38px;
+    letter-spacing: 0.025em;
+    text-align: left;
+    font-family: sans-serif;
+    color: #A3DC2F;
+}
+
+.fo-links-numbr {
+    font-family: sans-serif;
+    font-size: 11.67px;
+    font-weight: 300;
+    line-height: 22.91px;
+    text-align: left;
+}
+
+.copyRight {
+    width: 100%;
+    height: 80px;
+    background: #0C0D38;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top: 1px solid #131453;
+}
+
+.copayRight-con{
+    font-family: sans-serif;
+    font-size: 12.48px;
+    font-weight: 400;
+    line-height: 56.76px;
+    letter-spacing: 0.025em;
+    text-align: left;
+    color: #F4E9E9
 }
